@@ -194,7 +194,7 @@ function getWeather(lat, lon) {
             elHumidity.innerText = res.data.main.humidity + '%';
             elWind.innerText = Math.round(res.data.wind.speed * 3.6) + ' km/h';
             elType.innerText = res.data.weather[0].main;
-            elIcon.src = `http://openweathermap.org/img/w/${res.data.weather[0].icon}.png`;
+            elIcon.src = `https://openweathermap.org/img/w/${res.data.weather[0].icon}.png`;
 
         })
         .catch(err => {
