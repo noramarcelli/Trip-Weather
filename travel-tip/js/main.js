@@ -176,7 +176,7 @@ function copyURL () {
 
 function getWeather(lat, lon) {
     let key = 'd1ef05366e0b7ae69ddcae70eafbed76';
-    axios.get(`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${key}`)
+    axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${key}`)
         .then(function (res) {
             // console.log('temp:', res.data.main.temp);
             // console.log('humidity:', res.data.main.humidity);

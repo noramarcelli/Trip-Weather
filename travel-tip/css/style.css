@@ -176,6 +176,9 @@ input {
         margin: 35px;
         width: 90%;
     }
+    iframe {
+        max-width: 100%;
+    }
 }
 
 
