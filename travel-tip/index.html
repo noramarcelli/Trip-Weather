@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Weather</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="flex space-between">
+        <h1>Travel
+            <br> Weather</h1>
+            <section class="user-btns block">
+                    <form>
+                        <input type="text" name="address" placeholder="Enter location" autofocus/>
+                        <!-- class="fa fa-search" -->
+                        <button class="Find-Location-BTN" type="submit" title="Show Location">
+                            <i class="fas fa-location-arrow"></i>
+                        </button>
+
+                        <button class="My-Location-BTN" title="My Location">
+                            <i class="fas fa-map-marker"></i>
+                        </button>
+                       
+                        <button id="copy" class="copy" type="submit" title="Copy Location">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    </form>
+                </section>
+    </header>
+    <main>
+        <div class="map">
+            <div id="map" style="width: 96%; height: 450px;"></div>
+        </div>
+
+        <div class="navigation flex space-between">
+
+            <section class="geo">
+                <ul>
+                    <li>Searched Location:</li>
+                    <li class="searched-address"></li>
+                </ul>
+            </section>
+
+            <section class="weather flex space-around">
+                <!-- <h3 class="temp-title">weather prognose:
+                    <i class="fas fa-thermometer-half"></i>
+                </h3> -->
+                <ul>
+                    <li id="li1">weather prognose:&nbsp<i class="fas fa-thermometer-half"></i></li>
+                    <br>
+                    <li id="li2">Temprature:</li>
+                    <li class="temp "></i></li>
+                    <br>
+                    <li id="li3">Humidity: </li>
+                    <li class="humidity"></li>
+                    <br>
+                    <li id="li4">Wind:</li>
+                    <li class="wind"></li>
+                    <br>
+                    <li>Weather Type:</li>
+                    <li class="weather-type"></li>
+                    <li>
+                        <img class="weather-icon" />
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <input id="input" class="copy-input absolute" type="text"/>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'Candy Shop';
+    src: url('../fonts/Candy Shop.ttf');
+}
+@font-face {
+    font-family: 'Jam Sessions Personal Use';
+    src: url('../fonts/Jam Sessions Personal Use.ttf');
+}
+@font-face {
+    font-family: 'larabiefont rg';
+    src: url('../fonts/larabiefont rg.ttf');
+}
+
+body {
+    background: linear-gradient(to right, rgb(139, 215, 224) , rgb(0, 130, 206));
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    font-family: 'Jam Sessions Personal Use';
+    font-size: 70px;
+    text-decoration: underline;
+    font-weight: bold;
+    margin: 10px;
+    padding: 15px;
+    color: black;
+    text-shadow: 8px 0px #ffffff96;
+    transform: rotate(-10deg);
+}
+main {
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    border-radius: 4px;
+    border-color: #73aee661;
+    /* box-shadow: -1px 4px 6px 0px #ffffffa3; */
+    z-index: 1;
+    position: absolute;
+    /* padding: 25px; */
+    margin: 20px;
+}
+.navigation {
+    z-index: 5;
+    position: absolute;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 0; 
+    padding: 0;
+}
+
+section {
+    font-family: 'larabiefont rg'; 
+    font-weight: bold;   
+    background: #73aee661;
+    border: 1px solid #73aee661;
+    border-radius: 5px;
+    padding: 15px;
+    /* box-shadow: -1px 4px 6px 0px #ffffffa3; */
+    font-size: 18px; 
+}
+.user-btns {
+    float: right;
+    margin: 20px;
+    font-size: 22px;
+    background: none;
+}
+
+.weather {
+    /* width: 100vw; */
+    display: block;
+    margin-right: 80px;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.geo {
+    display: inline;
+    margin-left: 40px;
+    margin-top: 80px;
+    height: 100%;
+    
+}
+
+button {
+    border-radius: 4px;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    /* margin: 2px; */
+}
+input {
+    font-family: 'larabiefont rg';
+    border-radius: 4px;
+    width: 500px;
+    font-size: 22px;
+    padding: 5px;
+    margin: 3px;
+}
+
+/* HELPERS */
+.absolute {
+    position: absolute;
+}
+.block {
+    display: block;
+}
+.flex {
+    display: flex;
+}
+.space-between {
+    justify-content: space-between;
+}
+.space-around {
+    justify-content: space-between;
+}
+.copy-input {
+    z-index: -1000;
+    top: 500px;
+    left: 30px;
+}
+
+@media (max-width: 850px) {
+    h1 {
+        display: none;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+    }
+    input {
+        width: 250px;
+        font-size: 20px;
+        padding: 4px;
+    }
+
+    button {
+        height: 37px;
+        width: 37px;
+    }
+    .user-btns {
+        margin: 0 auto;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    main, .map, body {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    #li1, .humidity, #li3, .wind, #li4, br  {
+        display: none;
+    }
+    .navigation {
+        margin: 0;
+        padding: 0;
+    }
+    .weather {
+        height: 140px;
+        width: 35%;
+        padding: 10px;
+        margin: 30px;
+    }
+    .geo {
+        /* align-self: left; */
+        padding: 4px;
+        margin: 35px;
+        width: 90%;
+    }
+}
+
+
+
